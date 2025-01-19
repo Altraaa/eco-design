@@ -58,7 +58,7 @@ const Landing = () => {
           initial={{ scale: 0.8, opacity: 0 }}
           animate={{ scale: 1, opacity: 1 }}
           transition={{ delay: 0.6 }}
-          className="absolute justify-end right-48 rounded-2xl flex w-2/3 top-1/4 h-1/2" 
+          className="xl:absolute justify-end right-48 rounded-2xl flex w-2/3 top-1/4 h-1/2" 
         >
           <img
             src={imghome7}
