@@ -12,8 +12,6 @@ import imghome6 from "../assets/images/ecodesign8.jpg";
 const Landing = () => {
   const heroAnimation = useScrollAnimation();
   const caseStudyAnimation = useScrollAnimation(0.2);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const featuresAnimation = useScrollAnimation(0.2);
 
   return (
     <div className="min-h-screen">

@@ -1,14 +1,8 @@
 import { motion } from "framer-motion";
-import { useScrollAnimation } from "../hooks/useScrollAnimation";
+
 
 const About = () => {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const headerAnimation = useScrollAnimation();
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const statsAnimation = useScrollAnimation(0.2);
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
-  const teamAnimation = useScrollAnimation(0.2);
-
+  
   const teamMembers = [
     {
       nim: "202405051",
