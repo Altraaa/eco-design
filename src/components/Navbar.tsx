@@ -76,14 +76,6 @@ const Navbar = () => {
                 </span>
               </Link>
             ))}
-            <motion.button
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="px-6 py-2 bg-secondary text-white text-sm font-medium rounded-full
-              hover:bg-secondary-light transition-all duration-300 shadow-md hover:shadow-lg"
-            >
-              Contact Us
-            </motion.button>
           </div>
 
           {/* Mobile Menu Button */}

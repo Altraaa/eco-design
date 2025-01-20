@@ -7,14 +7,16 @@ import About from "./pages/About";
 function App() {
   return (
     <Router>
-      <div className="min-h-screen bg-cream">
+      <div className="min-h-screen bg-cream flex flex-col">
         <Navbar />
-        <AnimatePresence mode="wait">
-          <Routes>
-            <Route path="/" element={<Landing />} />
-            <Route path="/about" element={<About />} />
-          </Routes>
-        </AnimatePresence>
+        <main className="flex-grow">
+          <AnimatePresence mode="wait">
+            <Routes>
+              <Route path="/" element={<Landing />} />
+              <Route path="/about" element={<About />} />
+            </Routes>
+          </AnimatePresence>
+        </main>
       </div>
     </Router>
   );
