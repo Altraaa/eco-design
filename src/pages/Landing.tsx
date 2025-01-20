@@ -8,14 +8,14 @@ import imghome3 from "../assets/images/ecodesign5.jpg";
 import imghome4 from "../assets/images/ecodesign6.jpg";
 import imghome5 from "../assets/images/ecodesign7.jpg";
 import imghome6 from "../assets/images/ecodesign8.jpg";
-import maitenance from "../assets/images/maitenance.jpg"
-import kitchen from "../assets/images/kitchen.jpg"
-import naturalair from "../assets/images/naturalair.jpg"
-import greenspace from "../assets/images/greenspace.jpg"
-import plant from "../assets/images/plant.jpg"
-import material from "../assets/images/material.jpg"
-import skylight from "../assets/images/skylight.jpg"
-import natural from "../assets/images/natural.jpg"
+import maitenance from "../assets/images/maitenance.jpg";
+import kitchen from "../assets/images/kitchen.jpg";
+import naturalair from "../assets/images/naturalair.jpg";
+import greenspace from "../assets/images/greenspace.jpg";
+import plant from "../assets/images/plant.jpg";
+import material from "../assets/images/material.jpg";
+import skylight from "../assets/images/skylight.jpg";
+import natural from "../assets/images/natural.jpg";
 
 const Landing = () => {
   const heroAnimation = useScrollAnimation();
@@ -210,136 +210,6 @@ const Landing = () => {
                   {benefit.title}
                 </h3>
                 <p className="text-white/90">{benefit.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefits Grid Section */}
-      <section className="py-20 bg-gradient-to-br from-custom-gray6 to-custom-gray7">
-        <div className="container mx-auto px-4">
-          <motion.div
-            initial={{ opacity: 0, y: 50 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-4xl font-serif text-white mb-4">
-              MANFAAT PENGGUNAAN VEGETASI
-            </h2>
-            <p className="text-white/80 max-w-3xl mx-auto">
-              Keuntungan Mengintegrasikan Tanaman dalam Desain Interior
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Kesejukan Alami",
-                description:
-                  "Tanaman mampu menyerap panas dan meningkatkan kelembapan udara, menciptakan suasana yang lebih sejuk dan nyaman. Ini sangat bermanfaat terutama di daerah dengan iklim tropis yang panas.",
-                color: "from-custom-gray2 to-custom-gray3",
-              },
-              {
-                title: "Pemurnian Udara",
-                description:
-                  "Tumbuhan menyerap karbon dioksida dan melepaskan oksigen, sehingga kualitas udara di dalam ruangan menjadi lebih baik. Beberapa jenis tanaman bahkan mampu menyerap polutan berbahaya.",
-                color: "from-custom-gray3 to-custom-gray4",
-              },
-              {
-                title: "Reduksi Kebisingan",
-                description:
-                  "Dedaunan tanaman dapat menyerap suara, sehingga membantu mengurangi kebisingan dari luar ruangan dan menciptakan suasana yang lebih tenang.",
-                color: "from-custom-gray4 to-custom-gray5",
-              },
-              {
-                title: "Peningkatan Produktivitas",
-                description:
-                  "Studi menunjukkan bahwa keberadaan tanaman di dalam ruangan dapat meningkatkan konsentrasi, kreativitas, dan produktivitas.",
-                color: "from-custom-gray5 to-custom-gray6",
-              },
-              {
-                title: "Pengurangan Stres",
-                description:
-                  "Melihat tanaman hijau memiliki efek menenangkan dan dapat mengurangi stres. Interaksi dengan alam dapat meningkatkan kesejahteraan mental.",
-                color: "from-custom-gray6 to-custom-gray7",
-              },
-              {
-                title: "Estetika yang Menarik",
-                description:
-                  "Tanaman memberikan sentuhan alami dan estetika yang unik pada setiap ruangan, dengan berbagai bentuk, warna, dan ukuran yang dapat disesuaikan.",
-                color: "from-custom-gray7 to-custom-gray1",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`bg-gradient-to-br ${item.color} rounded-2xl p-8 text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1`}
-              >
-                <h3 className="text-xl font-serif mb-4">{item.title}</h3>
-                <p className="text-white/90">{item.description}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Benefit Cards with Animation */}
-      <section className="py-20 bg-white">
-        <div className="container mx-auto px-4">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {[
-              {
-                title: "Kesejukan Alami",
-                description:
-                  "Tanaman mampu menyerap panas dan meningkatkan kelembapan udara, menciptakan suasana yang lebih sejuk dan nyaman. Ini sangat bermanfaat terutama di daerah dengan iklim tropis yang panas.",
-                color: "from-custom-gray2 to-custom-gray3",
-              },
-              {
-                title: "Pemurnian Udara",
-                description:
-                  "Tumbuhan menyerap karbon dioksida dan melepaskan oksigen, sehingga kualitas udara di dalam ruangan menjadi lebih baik. Beberapa jenis tanaman bahkan mampu menyerap polutan berbahaya.",
-                color: "from-custom-gray3 to-custom-gray4",
-              },
-              {
-                title: "Reduksi Kebisingan",
-                description:
-                  "Dedaunan tanaman dapat menyerap suara, sehingga membantu mengurangi kebisingan dari luar ruangan dan menciptakan suasana yang lebih tenang.",
-                color: "from-custom-gray4 to-custom-gray5",
-              },
-              {
-                title: "Peningkatan Produktivitas",
-                description:
-                  "Studi menunjukkan bahwa keberadaan tanaman di dalam ruangan dapat meningkatkan konsentrasi, kreativitas, dan produktivitas.",
-                color: "from-custom-gray5 to-custom-gray6",
-              },
-              {
-                title: "Pengurangan Stres",
-                description:
-                  "Melihat tanaman hijau memiliki efek menenangkan dan dapat mengurangi stres. Interaksi dengan alam dapat meningkatkan kesejahteraan mental.",
-                color: "from-custom-gray6 to-custom-gray7",
-              },
-              {
-                title: "Estetika yang Menarik",
-                description:
-                  "Tanaman memberikan sentuhan alami dan estetika yang unik pada setiap ruangan, dengan berbagai bentuk, warna, dan ukuran yang dapat disesuaikan.",
-                color: "from-custom-gray7 to-custom-gray1",
-              },
-            ].map((item, index) => (
-              <motion.div
-                key={item.title}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-                className={`bg-gradient-to-br ${item.color} rounded-2xl p-8 text-white hover:shadow-xl transition-all duration-300 transform hover:-translate-y-1`}
-              >
-                <h3 className="text-xl font-serif mb-4">{item.title}</h3>
-                <p className="text-white/90">{item.description}</p>
               </motion.div>
             ))}
           </div>
